@@ -97,7 +97,7 @@ const METRICS = [
 ];
 
 function useInView(threshold = 0.1) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const [inView, setInView] = useState(false);
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setInView(true); }, { threshold });
@@ -112,7 +112,7 @@ function DivisionCard({ div, index }: { div: typeof DIVISIONS[0]; index: number 
   const [hov, setHov] = useState(false);
   return (
     <a
-      ref={ref}
+      ref={ref as React.RefObject<HTMLAnchorElement>}
       href={div.href}
       onMouseEnter={() => setHov(true)}
       onMouseLeave={() => setHov(false)}
