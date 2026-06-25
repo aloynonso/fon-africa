@@ -235,7 +235,7 @@ function ServiceCard({ title, desc, index }: { title: string; desc: string; inde
         cursor: "default",
       }}
     >
-      <div style={{ width: 32, height: 2, background: T.copper, marginBottom: "1.25rem", transition: "width 0.3s", width: hov ? 64 : 32 }} />
+      <div style={{ width: hov ? 64 : 32, height: 2, background: T.copper, marginBottom: "1.25rem", transition: "width 0.3s" }} />
       <h3 style={{ fontFamily: "'Fraunces', serif", fontSize: "1.15rem", color: T.white, marginBottom: "0.75rem", fontWeight: 600 }}>{title}</h3>
       <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: T.offwhite, lineHeight: 1.7, margin: 0 }}>{desc}</p>
     </div>
