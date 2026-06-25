@@ -312,7 +312,6 @@ function ValueChainDiagram() {
                 style={{
                   opacity: inView ? 1 : 0,
                   transform: inView ? "scale(1)" : "scale(0.85)",
-                  transition: `opacity 0.5s ease ${i * 100}ms, transform 0.5s ease ${i * 100}ms`,
                   background: isActive ? T.copper : T.charcoalMid,
                   border: `1px solid ${isActive ? T.copperGlow : T.steelLight}`,
                   padding: "1.75rem 1.25rem",
