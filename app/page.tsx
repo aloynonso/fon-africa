@@ -220,28 +220,42 @@ export default function HomePage() {
           </svg>
         </div>
 
-        <div style={{ position: "relative", zIndex: 1, padding: "clamp(2rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem)", maxWidth: 1200, width: "100%" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "2.5rem" }}>
-            <div style={{ width: 40, height: 1, background: "#C9A84C" }} />
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.15em", color: "#C9A84C", textTransform: "uppercase" }}>Father of Nations — Industrial Group</span>
+        <div style={{ position: "relative", zIndex: 1, padding: "clamp(2rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem)", maxWidth: 1200, width: "100%", display: "grid", gridTemplateColumns: "1fr auto", gap: "4rem", alignItems: "center" }}>
+
+          {/* LEFT — headline */}
+          <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "2.5rem" }}>
+              <div style={{ width: 40, height: 1, background: "#C9A84C" }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.15em", color: "#C9A84C", textTransform: "uppercase" }}>Father of Nations — Industrial Group</span>
+            </div>
+
+            <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(3rem, 8vw, 6.5rem)", fontWeight: 700, lineHeight: 1.0, margin: "0 0 1.5rem", letterSpacing: "-0.03em" }}>
+              Building<br />Africa's<br /><span style={{ color: "#C9A84C" }}>Industrial</span><br />Future.
+            </h1>
+
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "clamp(1rem, 2vw, 1.15rem)", color: T.offwhite, maxWidth: 540, lineHeight: 1.8, margin: "0 0 3rem" }}>
+              A Pan-African industrial holding group operating across energy, agriculture, minerals, and technology — building the infrastructure, industries, and supply chains that will define the continent's next century.
+            </p>
+
+            <div style={{ display: "flex", gap: "1rem" }}>
+              <a href="/about" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", padding: "1rem 2rem", background: "#C9A84C", color: T.black, textDecoration: "none", textTransform: "uppercase" }}>
+                About FON →
+              </a>
+              <a href="/investors" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", padding: "1rem 2rem", border: `1px solid ${T.steelLight}`, color: T.offwhite, textDecoration: "none", textTransform: "uppercase" }}>
+                Investors
+              </a>
+            </div>
           </div>
 
-          <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(3rem, 8vw, 6.5rem)", fontWeight: 700, lineHeight: 1.0, margin: "0 0 1.5rem", letterSpacing: "-0.03em" }}>
-            Building<br />Africa's<br /><span style={{ color: "#C9A84C" }}>Industrial</span><br />Future.
-          </h1>
-
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "clamp(1rem, 2vw, 1.15rem)", color: T.offwhite, maxWidth: 540, lineHeight: 1.8, margin: "0 0 3rem" }}>
-            A Pan-African industrial holding group operating across energy, agriculture, minerals, and technology — building the infrastructure, industries, and supply chains that will define the continent's next century.
-          </p>
-
-          <div style={{ display: "flex", gap: "1rem" }}>
-            <a href="/about" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", padding: "1rem 2rem", background: "#C9A84C", color: T.black, textDecoration: "none", textTransform: "uppercase" }}>
-              About FON →
-            </a>
-            <a href="/investors" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", padding: "1rem 2rem", border: `1px solid ${T.steelLight}`, color: T.offwhite, textDecoration: "none", textTransform: "uppercase" }}>
-              Investors
-            </a>
+          {/* RIGHT — logo */}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.92 }}>
+            <img
+              src="/images/fon-logo.png"
+              alt="FON Industrial Group"
+              style={{ width: "clamp(220px, 22vw, 380px)", height: "auto", objectFit: "contain", filter: "drop-shadow(0 0 40px rgba(201,168,76,0.15))" }}
+            />
           </div>
+
         </div>
       </section>
 
