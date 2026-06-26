@@ -248,7 +248,7 @@ export default function HomePage() {
           </div>
 
           {/* RIGHT — logo */}
-          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center", opacity: 0.92, paddingTop: "4.5rem" }}>
+          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center", opacity: 0.92, marginTop: "-8rem" }}>
             <img
               src="/images/fon-logo.png"
               alt="FON Industrial Group"
