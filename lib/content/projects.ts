@@ -14,11 +14,12 @@
 
 export const projects: Project[] = [
   // Energy
-  { id: 'karoo-bess', name: 'Karoo Battery Network', division: 'energy', country: 'South Africa', region: 'Southern Africa', capacity: '1.2 GWh', value: '$540M', status: 'Pre-construction', progress: 65 },
-  { id: 'victoria-solar', name: 'Lake Victoria Solar Belt', division: 'energy', country: 'Uganda', region: 'East Africa', capacity: '310 MW', value: '$310M', status: 'Financing', progress: 40 },
+  { id: 'karoo-bess', name: 'Karoo Battery Network', division: 'energy', country: 'South Africa', region: 'Southern Africa', capacity: '1.2 GWh', value: '$540M', status: 'Development', progress: 65 },
+  { id: 'victoria-solar', name: 'Lake Victoria Solar Belt', division: 'energy', country: 'Uganda', region: 'East Africa', capacity: '310 MW', value: '$310M', status: 'Development', progress: 40 },
   { id: 'mahikeng-power', name: 'Mahikeng Power Hub', division: 'energy', country: 'South Africa', region: 'Southern Africa', capacity: '180 MW', value: '$220M', status: 'Development', progress: 25 },
-  { id: 'copperbelt-ipp', name: 'Copperbelt Industrial PPA', division: 'energy', country: 'Zambia', region: 'Southern Africa', capacity: '450 MW', value: '$380M', status: 'Construction', progress: 78 },
-  { id: 'volta-hybrid', name: 'Volta Hybrid Grid', division: 'energy', country: 'Ghana', region: 'West Africa', capacity: '85 MW', value: '$95M', status: 'Planning', progress: 15 },
+  { id: 'copperbelt-ipp', name: 'Copperbelt Industrial PPA', division: 'energy', country: 'Zambia', region: 'Southern Africa', capacity: '450 MW', value: '$380M', status: 'Development', progress: 78 },
+  { id: 'zambia-grid-land', name: 'Zambia Grid-Connected Land', division: 'energy', country: 'Zambia', region: 'Southern Africa', capacity: '800 ha', value: '$60M', status: 'Development', progress: 20 },
+  { id: 'volta-hybrid', name: 'Volta Hybrid Grid', division: 'energy', country: 'Ghana', region: 'West Africa', capacity: '85 MW', value: '$95M', status: 'Development', progress: 15 },
   { id: 'lagos-distributed', name: 'Lagos Distributed Network', division: 'energy', country: 'Nigeria', region: 'West Africa', capacity: '240 MW', value: '$310M', status: 'Development', progress: 30 },
 
   // Agro
@@ -34,4 +35,5 @@ export const projects: Project[] = [
   { id: 'sovereign-cloud', name: 'Sovereign Cloud Tier-III', division: 'technologies', country: 'Pan-African', region: 'Continental', value: '$220M', status: 'Planning', progress: 15 },
   { id: 'gridos', name: 'GridOS Energy Software', division: 'technologies', country: 'South Africa', region: 'Southern Africa', value: '$45M', status: 'Construction', progress: 80 },
 ];
+
 
