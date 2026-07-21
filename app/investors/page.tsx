@@ -82,7 +82,7 @@ export default function InvestorsPage() {
           <img src="/images/fon-logo.png" alt="FON Industrial Group" style={{ height: 44, width: "auto", objectFit: "contain" }} />
         </a>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
-          {[["Energy", "/energy"], ["Agro", "/agro"], ["Minerals", "/minerals"], ["Technologies", "/technologies"]].map(([label, href]) => (
+          {[["Energy", "/energy"], ["Agro", "/agro"], ["Minerals", "/minerals"], ["Technologies", "/technologies"], ["Media", "/media"]].map(([label, href]) => (
             <a key={label} href={href} style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", letterSpacing: "0.08em", textTransform: "uppercase", color: T.offwhite, textDecoration: "none" }}>{label}</a>
           ))}
           <a href="/investors" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.72rem", padding: "0.5rem 1.1rem", border: `1px solid ${T.gold}`, color: T.gold, textDecoration: "none", letterSpacing: "0.08em" }}>INVESTORS</a>
@@ -132,6 +132,28 @@ export default function InvestorsPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* MEDIA & INDUSTRY INTELLIGENCE ADVANTAGE */}
+      <section style={{ padding: "5rem clamp(1.5rem, 5vw, 4rem)", borderBottom: `1px solid ${T.steelLight}`, position: "relative", overflow: "hidden" }}>
+        <div aria-hidden style={{ position: "absolute", inset: 0, background: "radial-gradient(80% 130% at 90% 0%, rgba(201,168,76,0.08), transparent 55%)", pointerEvents: "none" }} />
+        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", display: "grid", gridTemplateColumns: "minmax(0, 1fr)", gap: "1.5rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div style={{ width: 40, height: 1, background: T.gold }} />
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.15em", color: T.gold, textTransform: "uppercase" }}>The Media &amp; Intelligence Advantage</span>
+          </div>
+          <h2 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 700, lineHeight: 1.12, letterSpacing: "-0.02em", margin: 0, maxWidth: 760 }}>
+            Projects that are <span style={{ color: T.goldLight, fontStyle: "italic", fontWeight: 400 }}>seen</span> are projects that get financed.
+          </h2>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "clamp(0.95rem, 1.4vw, 1.08rem)", lineHeight: 1.75, color: T.offwhite, maxWidth: 760, margin: 0 }}>
+            FON's Media &amp; Industry Intelligence division enhances deal flow, visibility, investor confidence and project promotion by producing professional industry content—documentaries, executive interviews, market intelligence and project showcases that document our assets, contextualise the value chain and de-risk perception for capital partners.
+          </p>
+          <div>
+            <a href="/media" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.72rem", letterSpacing: "0.1em", padding: "0.85rem 1.75rem", border: `1px solid ${T.gold}55`, color: T.gold, textDecoration: "none", textTransform: "uppercase", display: "inline-block" }}>
+              Explore the Media Division →
+            </a>
           </div>
         </div>
       </section>

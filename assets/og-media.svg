@@ -1,0 +1,75 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="82%" cy="12%" r="85%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.20"/>
+      <stop offset="55%" stop-color="#C9A84C" stop-opacity="0.0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B0C0C"/>
+      <stop offset="60%" stop-color="#0F1011"/>
+      <stop offset="100%" stop-color="#0B0C0C"/>
+    </linearGradient>
+    <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#E2C36A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1200" height="630" fill="url(#base)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Letterbox bars (film frame signature) -->
+  <rect x="0" y="0" width="1200" height="34" fill="#060707"/>
+  <rect x="0" y="596" width="1200" height="34" fill="#060707"/>
+
+  <!-- Sprocket holes along the bars -->
+  <g fill="#0B0C0C" stroke="#2A2A28" stroke-width="1">
+    <rect x="40"  y="10" width="22" height="14" rx="2"/>
+    <rect x="120" y="10" width="22" height="14" rx="2"/>
+    <rect x="200" y="10" width="22" height="14" rx="2"/>
+    <rect x="280" y="10" width="22" height="14" rx="2"/>
+    <rect x="360" y="10" width="22" height="14" rx="2"/>
+    <rect x="440" y="10" width="22" height="14" rx="2"/>
+    <rect x="520" y="10" width="22" height="14" rx="2"/>
+    <rect x="600" y="10" width="22" height="14" rx="2"/>
+    <rect x="680" y="10" width="22" height="14" rx="2"/>
+    <rect x="760" y="10" width="22" height="14" rx="2"/>
+    <rect x="840" y="10" width="22" height="14" rx="2"/>
+    <rect x="920" y="10" width="22" height="14" rx="2"/>
+    <rect x="1000" y="10" width="22" height="14" rx="2"/>
+    <rect x="1080" y="10" width="22" height="14" rx="2"/>
+    <rect x="1160" y="10" width="22" height="14" rx="2"/>
+    <rect x="40"  y="606" width="22" height="14" rx="2"/>
+    <rect x="120" y="606" width="22" height="14" rx="2"/>
+    <rect x="200" y="606" width="22" height="14" rx="2"/>
+    <rect x="280" y="606" width="22" height="14" rx="2"/>
+    <rect x="360" y="606" width="22" height="14" rx="2"/>
+    <rect x="440" y="606" width="22" height="14" rx="2"/>
+    <rect x="520" y="606" width="22" height="14" rx="2"/>
+    <rect x="600" y="606" width="22" height="14" rx="2"/>
+    <rect x="680" y="606" width="22" height="14" rx="2"/>
+    <rect x="760" y="606" width="22" height="14" rx="2"/>
+    <rect x="840" y="606" width="22" height="14" rx="2"/>
+    <rect x="920" y="606" width="22" height="14" rx="2"/>
+    <rect x="1000" y="606" width="22" height="14" rx="2"/>
+    <rect x="1080" y="606" width="22" height="14" rx="2"/>
+    <rect x="1160" y="606" width="22" height="14" rx="2"/>
+  </g>
+
+  <!-- Eyebrow -->
+  <rect x="80" y="132" width="34" height="2" fill="#C9A84C"/>
+  <text x="130" y="139" font-family="JetBrains Mono" font-size="19" letter-spacing="5" fill="#C9A84C">FON · MEDIA &amp; INDUSTRY INTELLIGENCE</text>
+
+  <!-- Headline -->
+  <text x="76" y="268" font-family="Fraunces" font-weight="300" font-size="92" letter-spacing="-2" fill="#F5F2EE">Telling Africa&#8217;s</text>
+  <text x="76" y="368" font-size="92" letter-spacing="-2"><tspan font-family="Fraunces" font-style="italic" font-weight="400" fill="#E2C36A">Industrial</tspan><tspan font-family="Fraunces" font-weight="300" fill="#F5F2EE"> Story.</tspan></text>
+
+  <!-- Sub -->
+  <text x="80" y="438" font-family="JetBrains Mono" font-size="20" letter-spacing="1" fill="#C8C4BE">Documentary · Interviews · Intelligence · Education</text>
+
+  <!-- Divider + wordmark line -->
+  <rect x="80" y="500" width="1040" height="1" fill="url(#goldline)" opacity="0.5"/>
+  <text x="80" y="546" font-family="Fraunces" font-weight="500" font-size="26" letter-spacing="1" fill="#F5F2EE">FON INDUSTRIAL GROUP</text>
+  <text x="1120" y="546" font-family="JetBrains Mono" font-size="19" letter-spacing="3" fill="#8A857D" text-anchor="end">fon.africa/media</text>
+</svg>

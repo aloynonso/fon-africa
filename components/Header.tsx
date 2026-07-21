@@ -5,23 +5,23 @@ import Link from "next/link";
 import Image from "next/image";
 
 const DIVISIONS = [
-  { label: "Energy", href: "/energy", accent: "#1B6FEB" },
-  { label: "Agro", href: "/agro", accent: "#2D6A4F" },
-  { label: "Minerals", href: "/minerals", accent: "#B5621E" },
-  { label: "Technologies", href: "/technologies", accent: "#00F0FF" },
+  { label: "Energy", href: "/energy", accent: "#1B6FEB", footerLabel: "Energy" },
+  { label: "Agro", href: "/agro", accent: "#2D6A4F", footerLabel: "Agro" },
+  { label: "Minerals", href: "/minerals", accent: "#B5621E", footerLabel: "Minerals" },
+  { label: "Technologies", href: "/technologies", accent: "#00F0FF", footerLabel: "Technologies" },
+  { label: "Media", href: "/media", accent: "#C9A84C", footerLabel: "Media & Industry Intelligence" },
 ];
 
 const MORE_LINKS = [
   { label: "Projects", href: "/projects" },
   { label: "Investors", href: "/investors" },
   { label: "Partners", href: "/partners" },
-  { label: "Media", href: "/media" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
 interface HeaderProps {
-  activeDivision?: "energy" | "agro" | "minerals" | "technologies" | null;
+  activeDivision?: "energy" | "agro" | "minerals" | "technologies" | "media" | null;
 }
 
 export function Header({ activeDivision = null }: HeaderProps) {
@@ -39,6 +39,7 @@ export function Header({ activeDivision = null }: HeaderProps) {
     agro: "#2D6A4F",
     minerals: "#B5621E",
     technologies: "#00F0FF",
+    media: "#C9A84C",
   };
 
   const accentColor = activeDivision ? divisionColors[activeDivision] : "#C9A84C";
@@ -192,7 +193,7 @@ export function Footer() {
           {[
             {
               label: "Divisions",
-              links: DIVISIONS.map((d) => ({ label: d.label, href: d.href })),
+              links: DIVISIONS.map((d) => ({ label: d.footerLabel, href: d.href })),
             },
             {
               label: "Company",

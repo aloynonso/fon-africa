@@ -10,6 +10,8 @@ const T = {
   white: "#F4F1ED",
   offwhite: "#C0BBB4",
   muted: "#6E6A64",
+  gold: "#C9A84C",
+  goldLight: "#E2C36A",
   // Division accents
   energy: { primary: "#1B6FEB", secondary: "#10B981" },
   agro: { primary: "#2D6A4F", secondary: "#C47B2B" },
@@ -200,7 +202,7 @@ export default function HomePage() {
           <img src="/images/fon-logo.png" alt="FON Industrial Group" style={{ height: 44, width: "auto", objectFit: "contain" }} />
         </a>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
-          {[["Energy", "/energy"], ["Agro", "/agro"], ["Minerals", "/minerals"], ["Technologies", "/technologies"]].map(([label, href]) => (
+          {[["Energy", "/energy"], ["Agro", "/agro"], ["Minerals", "/minerals"], ["Technologies", "/technologies"], ["Media", "/media"]].map(([label, href]) => (
             <a key={label} href={href} style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", letterSpacing: "0.08em", textTransform: "uppercase", color: T.offwhite, textDecoration: "none" }}>{label}</a>
           ))}
           <a href="/investors" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.72rem", padding: "0.5rem 1.1rem", border: `1px solid #C9A84C44`, color: "#C9A84C", textDecoration: "none", letterSpacing: "0.08em" }}>INVESTORS</a>
@@ -286,10 +288,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* MEDIA & INDUSTRY INTELLIGENCE */}
+      <section style={{ borderTop: `1px solid ${T.steelLight}`, padding: "7rem clamp(1.5rem, 5vw, 4rem)", background: T.charcoal, position: "relative", overflow: "hidden" }}>
+        {/* Gold wash */}
+        <div aria-hidden style={{ position: "absolute", inset: 0, background: "radial-gradient(90% 120% at 85% 0%, rgba(201,168,76,0.09), transparent 55%)", pointerEvents: "none" }} />
+        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
+            <div style={{ width: 40, height: 1, background: T.gold }} />
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.15em", color: T.gold, textTransform: "uppercase" }}>Media &amp; Industry Intelligence</span>
+          </div>
+
+          <h2 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(2rem, 4.5vw, 3.4rem)", fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.02em", margin: "0 0 1.4rem", maxWidth: 800 }}>
+            Building Africa's<br /><span style={{ color: T.goldLight, fontStyle: "italic", fontWeight: 400 }}>Industrial Narrative</span>.
+          </h2>
+
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "clamp(1rem, 1.4vw, 1.1rem)", lineHeight: 1.75, color: T.offwhite, maxWidth: 720, margin: "0 0 2.5rem" }}>
+            Beyond developing projects, FON Industrial Group documents Africa's industrial transformation through premium documentaries, executive interviews, industry intelligence and educational content that connect technology providers, investors, governments and project developers.
+          </p>
+
+          <div style={{ display: "flex", gap: "2.5rem", flexWrap: "wrap", marginBottom: "2.75rem" }}>
+            {["Documentary Films", "Executive Interviews", "Industry Intelligence", "Educational Content"].map((f) => (
+              <span key={f} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", letterSpacing: "0.12em", textTransform: "uppercase", color: T.muted }}>
+                {f}
+              </span>
+            ))}
+          </div>
+
+          <a href="/media" style={{ display: "inline-block", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", padding: "1rem 2rem", background: T.gold, color: T.black, textDecoration: "none", textTransform: "uppercase" }}>
+            Explore Media Division →
+          </a>
+        </div>
+      </section>
+
       {/* TICKER */}
       <div style={{ borderTop: `1px solid ${T.steelLight}`, borderBottom: `1px solid ${T.steelLight}`, padding: "1rem 0", overflow: "hidden", background: T.charcoal }}>
         <div style={{ display: "flex", gap: "4rem", animation: "ticker 30s linear infinite", whiteSpace: "nowrap" }}>
-          {Array(3).fill(["ENERGY", "AGRICULTURE", "MINERALS", "TECHNOLOGY", "INFRASTRUCTURE", "PROCESSING", "TRADE", "DEVELOPMENT"]).flat().map((item, i) => (
+          {Array(3).fill(["ENERGY", "AGRICULTURE", "MINERALS", "TECHNOLOGY", "MEDIA", "INFRASTRUCTURE", "PROCESSING", "TRADE", "DEVELOPMENT"]).flat().map((item, i) => (
             <span key={i} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.65rem", letterSpacing: "0.15em", color: T.muted }}>
               {item} <span style={{ color: "#C9A84C44", marginLeft: "2rem" }}>◆</span>
             </span>
