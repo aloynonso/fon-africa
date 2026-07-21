@@ -5,7 +5,7 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'About · The Group',
   description:
-    "Father of Nations is a Pan-African industrial holding group. Learn about FON's mandate, leadership, governance, and ESG framework.",
+    "Father of Nations is a Pan-African industrial holding group operating across energy, agriculture, minerals, technology, and media & industry intelligence. Learn about FON's mandate, leadership, governance, and ESG framework.",
 };
 
 const PRINCIPLES = [
@@ -52,10 +52,20 @@ export default function AboutPage() {
               that operate at continental scale, deploy patient capital, and partner deeply with sovereign
               stakeholders. We are that institution.
             </p>
+            <p className="leading-relaxed mb-8" style={{ color: 'var(--bone-2)' }}>
+              Across our four industrial divisions — Energy, Agro, Minerals, and Technologies — we develop
+              and operate infrastructure that addresses Africa's most strategic challenges and unlocks its
+              most significant opportunities.
+            </p>
             <p className="leading-relaxed" style={{ color: 'var(--bone-2)' }}>
-              Across our three operating divisions — Energy, Agro, and Technologies — we develop and
-              operate infrastructure that addresses Africa's most strategic challenges and unlocks its most
-              significant opportunities.
+              A fifth strategic division, Media &amp; Industry Intelligence, runs beneath them all —
+              documenting Africa's industrial transformation through world-class documentaries, executive
+              interviews, industry research, and educational content that build the trust, visibility, and
+              knowledge on which industrialisation depends.{' '}
+              <Link href="/media" className="accent-text underline underline-offset-4">
+                Explore the Media division
+              </Link>
+              .
             </p>
           </div>
         </div>
