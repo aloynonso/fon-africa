@@ -227,8 +227,8 @@ export default function HomePage() {
           {/* LEFT — headline */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "2.5rem" }}>
-              <div style={{ width: 40, height: 1, background: "#C9A84C" }} />
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.15em", color: "#C9A84C", textTransform: "uppercase" }}>Father of Nations — Industrial Group</span>
+              <div style={{ width: 48, height: 2, background: "#E3C36B" }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.22em", color: "#E3C36B", textTransform: "uppercase" }}>Father of Nations — Industrial Group</span>
             </div>
 
             <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(3rem, 8vw, 6.5rem)", fontWeight: 700, lineHeight: 1.0, margin: "0 0 1.5rem", letterSpacing: "-0.03em" }}>
@@ -252,7 +252,7 @@ export default function HomePage() {
           {/* RIGHT — logo */}
           <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center", opacity: 0.92, marginTop: "-8rem" }}>
             <img
-              src="/images/fon-logo.png"
+              src="/images/fon-logo-hero.png"
               alt="FON Industrial Group"
               style={{ width: "clamp(220px, 22vw, 380px)", height: "auto", objectFit: "contain", filter: "drop-shadow(0 0 40px rgba(201,168,76,0.15))" }}
             />
