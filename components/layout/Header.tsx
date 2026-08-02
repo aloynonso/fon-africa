@@ -40,12 +40,9 @@ export function Header() {
       <div className="container-x flex items-center justify-between py-5">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 border hairline-bone flex items-center justify-center relative">
-            <span className="serif text-[18px] accent-text font-medium">F</span>
-            <span
-              className="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full"
-              style={{ background: 'var(--accent)' }}
-            />
+          <div className="w-10 h-10 flex items-center justify-center relative">
+            <img src="/images/fon-logo.png" alt="FON Industrial Group" style={{ width: 40, height: 40, objectFit: 'contain' }} />
+            
           </div>
           <div className="flex flex-col leading-none">
             <span className="serif text-[15px] tracking-wide">Father of Nations</span>
