@@ -228,7 +228,7 @@ export default function HomePage() {
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "2.5rem" }}>
               <div style={{ width: 48, height: 2, background: "#E3C36B" }} />
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.22em", color: "#E3C36B", textTransform: "uppercase" }}>Father of Nations — Industrial Group</span>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.22em", color: "#F2ECDD", textTransform: "uppercase" }}>Father of Nations — Industrial Group</span>
             </div>
 
             <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(3rem, 8vw, 6.5rem)", fontWeight: 700, lineHeight: 1.0, margin: "0 0 1.5rem", letterSpacing: "-0.03em" }}>
